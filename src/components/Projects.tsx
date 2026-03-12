@@ -193,7 +193,10 @@ const Projects: React.FC = () => {
         <motion.div layout className="projects-grid">
           <AnimatePresence>
             {filteredProjects.map((project) => (
-              <motion.div
+              <motion.a
+                href={project.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={project.id}
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -201,6 +204,7 @@ const Projects: React.FC = () => {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
                 className="project-card glass"
+                style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}
                 onMouseEnter={() => setHoveredProject(project.id)}
                 onMouseLeave={() => setHoveredProject(null)}
               >
@@ -208,10 +212,17 @@ const Projects: React.FC = () => {
                   <img src={project.image} alt={project.title} className="project-image" />
                   <div className={`project-overlay ${hoveredProject === project.id ? 'active' : ''}`}>
                     <div className="project-links">
-                      <a href={project.demoUrl} className="project-link-btn" title="Live Demo">
+                      <div className="project-link-btn" title="Live Demo">
                         <MonitorPlay size={20} />
-                      </a>
-                      <a href={project.repoUrl} className="project-link-btn" title="Source Code">
+                      </div>
+                      <a 
+                        href={project.repoUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="project-link-btn" 
+                        title="Source Code"
+                        onClick={(e) => e.stopPropagation()}
+                      >
                         <Github size={20} />
                       </a>
                     </div>
@@ -229,7 +240,7 @@ const Projects: React.FC = () => {
                     ))}
                   </div>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </AnimatePresence>
         </motion.div>
