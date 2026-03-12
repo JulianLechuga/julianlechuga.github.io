@@ -35,14 +35,16 @@
 }
 
 .filter-btn {
-  padding: 0.5rem 1.2rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.05);
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   transition: all 0.3s ease;
+  min-width: 120px;
+  text-align: center;
 }
 
 .filter-btn:hover {
@@ -113,34 +115,31 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(12, 10, 26, 0.8);
+  background: linear-gradient(to top, rgba(12, 10, 26, 0.9) 0%, rgba(12, 10, 26, 0) 50%);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project-overlay.active {
-  opacity: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem;
+  opacity: 1; /* Always visible */
 }
 
 .project-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .project-link-btn {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(139, 92, 246, 0.85); /* Use primary accent color, slightly transparent */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   transition: all 0.3s ease;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .project-link-btn:hover {
