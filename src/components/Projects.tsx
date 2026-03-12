@@ -11,8 +11,8 @@ interface Project {
   description: string;
   image: string;
   tech: string[];
-  demoUrl: string;
-  repoUrl: string;
+  demoUrl?: string;
+  repoUrl?: string;
 }
 
 const projectsData: Project[] = [
@@ -22,9 +22,7 @@ const projectsData: Project[] = [
     category: 'Full Stack',
     description: 'Music social network where users can review songs/artists, live chat, and manage playlists.',
     image: 'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&w=600&q=80',
-    tech: ['React', 'Redux', 'Node.js', 'PostgreSQL'],
-    demoUrl: '#',
-    repoUrl: '#'
+    tech: ['React', 'Redux', 'Node.js', 'PostgreSQL']
   },
   {
     id: 12,
@@ -33,8 +31,7 @@ const projectsData: Project[] = [
     description: 'A videogame library application including search, filtering, and user-created games.',
     image: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'Redux', 'Express', 'Sequelize'],
-    demoUrl: '#',
-    repoUrl: '#'
+    repoUrl: 'https://github.com/JulianLechuga/PI-Videogames'
   },
   {
     id: 1,
@@ -43,8 +40,8 @@ const projectsData: Project[] = [
     description: 'A modern, professional website for a physiotherapy clinic in Spain featuring service lists and appointment booking previews.',
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'TypeScript', 'Tailwind', 'Vite'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/Physiotherapy-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/Physiotherapy-demo'
   },
   {
     id: 2,
@@ -53,8 +50,8 @@ const projectsData: Project[] = [
     description: 'A beautiful, appetizing site for a Spanish restaurant featuring a rich menu, gallery, and elegant typography.',
     image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'TypeScript', 'CSS Modules', 'Framer'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/Restaurant-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/Restaurant-demo'
   },
   {
     id: 3,
@@ -63,8 +60,8 @@ const projectsData: Project[] = [
     description: 'A trustworthy portfolio site for a construction and renovation business showcasing before/after projects.',
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'TSX', 'Custom CSS', 'SEO'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/RepairCompany-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/RepairCompany-demo'
   },
   {
     id: 4,
@@ -73,8 +70,8 @@ const projectsData: Project[] = [
     description: 'A clean and professional web presence for a dental clinic, emphasizing trust, hygiene, and modern treatments.',
     image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'TypeScript', 'Tailwind CSS'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/DentalClinic-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/DentalClinic-demo'
   },
   {
     id: 5,
@@ -83,8 +80,8 @@ const projectsData: Project[] = [
     description: 'An bold, energetic website for a local gym or personal trainer featuring membership plans and trainer profiles.',
     image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'TSX', 'Framer Motion'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/Gym-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/Gym-demo'
   },
   {
     id: 6,
@@ -93,8 +90,8 @@ const projectsData: Project[] = [
     description: 'A calming and minimalist website for a psychological therapy practice in Spain with appointment booking.',
     image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'Vite', 'Minimal UI'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/Psychologist-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/Psychologist-demo'
   },
   {
     id: 7,
@@ -103,8 +100,8 @@ const projectsData: Project[] = [
     description: 'A robust and straightforward site for a mechanic and auto repair shop with service listings.',
     image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'TypeScript', 'CSS'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/MechanicWorkshop-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/MechanicWorkshop-demo'
   },
   {
     id: 8,
@@ -113,8 +110,8 @@ const projectsData: Project[] = [
     description: 'A highly aesthetic, premium UI/UX demo for a local hair salon with Google Maps integration.',
     image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'TSX', 'Google Maps API'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/HairSalon-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/HairSalon-demo'
   },
   {
     id: 9,
@@ -123,8 +120,8 @@ const projectsData: Project[] = [
     description: 'A highly optimized weather forecast application achieving a 100 Lighthouse score.',
     image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'OpenWeather API', 'Performance'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/AtmosphereWeatherApp/',
+    repoUrl: 'https://github.com/JulianLechuga/AtmosphereWeatherApp'
   },
   {
     id: 10,
@@ -133,8 +130,8 @@ const projectsData: Project[] = [
     description: 'A complex data visualization application featuring real-time stock charts and dark mode.',
     image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'Chart.js', 'Finance API', 'TSX'],
-    demoUrl: '#',
-    repoUrl: '#'
+    demoUrl: 'https://julianlechuga.github.io/StockHoldings-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/StockHoldings-demo'
   }
 ];
 
@@ -212,19 +209,31 @@ const Projects: React.FC = () => {
                   <img src={project.image} alt={project.title} className="project-image" />
                   <div className={`project-overlay ${hoveredProject === project.id ? 'active' : ''}`}>
                     <div className="project-links">
-                      <div className="project-link-btn" title="Live Demo">
-                        <MonitorPlay size={20} />
-                      </div>
-                      <a 
-                        href={project.repoUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="project-link-btn" 
-                        title="Source Code"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <Github size={20} />
-                      </a>
+                      {project.demoUrl && (
+                        <a
+                          href={project.demoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link-btn"
+                          title="Live Demo"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <MonitorPlay size={20} />
+                        </a>
+                      )}
+
+                      {project.repoUrl && (
+                        <a
+                          href={project.repoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link-btn"
+                          title="Source Code"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <Github size={20} />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
