@@ -132,6 +132,56 @@ const projectsData: Project[] = [
     tech: ['React', 'Chart.js', 'Finance API', 'TSX'],
     demoUrl: 'https://julianlechuga.github.io/StockHoldings-demo/',
     repoUrl: 'https://github.com/JulianLechuga/StockHoldings-demo'
+  },
+  {
+    id: 13,
+    title: 'Tattoo Shop Demo',
+    category: 'Lifestyle',
+    description: 'A dark, artistic portfolio site for a tattoo studio featuring responsive galleries and artist profiles.',
+    image: 'https://images.unsplash.com/photo-1590246814883-578332cb1601?auto=format&fit=crop&w=600&q=80',
+    tech: ['React', 'TSX', 'CSS Modules'],
+    demoUrl: 'https://julianlechuga.github.io/TatooShop-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/TatooShop-demo'
+  },
+  {
+    id: 14,
+    title: 'Barbershop Demo',
+    category: 'Beauty',
+    description: 'A classic, gentleman-style website for a local barbershop including services and booking integration.',
+    image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80',
+    tech: ['React', 'TypeScript', 'Tailwind'],
+    demoUrl: 'https://julianlechuga.github.io/Barbershop-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/Barbershop-demo'
+  },
+  {
+    id: 15,
+    title: 'Beauty Shop Demo',
+    category: 'Beauty',
+    description: 'An elegant, pastel-themed website for an aesthetic center with detailed treatments and pricing tables.',
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80',
+    tech: ['React', 'CSS', 'Vite'],
+    demoUrl: 'https://julianlechuga.github.io/BeautyShop-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/BeautyShop-demo'
+  },
+  {
+    id: 16,
+    title: 'Flower Shop Demo',
+    category: 'Lifestyle',
+    description: 'A vibrant, botanical ecommerce showcase for a local florist with product galleries and contact details.',
+    image: 'https://images.unsplash.com/photo-1563241527-2004ab3ba185?auto=format&fit=crop&w=600&q=80',
+    tech: ['React', 'CSS', 'Responsive'],
+    demoUrl: 'https://julianlechuga.github.io/FlowerShop-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/FlowerShop-demo'
+  },
+  {
+    id: 17,
+    title: 'Nail Salon Demo',
+    category: 'Beauty',
+    description: 'A highly visual, trendy portfolio for a nail salon focusing on high-quality artwork displays.',
+    image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?auto=format&fit=crop&w=600&q=80',
+    tech: ['React', 'TSX', 'Framer Motion'],
+    demoUrl: 'https://julianlechuga.github.io/NailSaloon-demo/',
+    repoUrl: 'https://github.com/JulianLechuga/NailSaloon-demo'
   }
 ];
 
@@ -141,10 +191,32 @@ const Projects: React.FC = () => {
   const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState('All');
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 9;
 
   const filteredProjects = projectsData.filter(project => 
     activeCategory === 'All' ? true : project.category === activeCategory
   );
+
+  const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
+  const paginatedProjects = filteredProjects.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  const handleCategoryChange = (category: string) => {
+    setActiveCategory(category);
+    setCurrentPage(1);
+  };
+
+  const handlePageChange = (pageNo: number) => {
+    setCurrentPage(pageNo);
+    // Smooth scroll specifically to the filter buttons container on pagination
+    const filterSection = document.getElementById('projects-filter-section');
+    if (filterSection) {
+      filterSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   return (
     <section id="projects" className="section projects-section">
@@ -170,6 +242,7 @@ const Projects: React.FC = () => {
         </div>
 
         <motion.div 
+          id="projects-filter-section"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -180,7 +253,7 @@ const Projects: React.FC = () => {
             <button
               key={category}
               className={`filter-btn ${activeCategory === category ? 'active' : ''}`}
-              onClick={() => setActiveCategory(category)}
+              onClick={() => handleCategoryChange(category)}
             >
               {category === 'All' ? t('projects.filter.all') : category}
             </button>
@@ -188,8 +261,8 @@ const Projects: React.FC = () => {
         </motion.div>
 
         <motion.div layout className="projects-grid">
-          <AnimatePresence>
-            {filteredProjects.map((project) => (
+          <AnimatePresence mode='popLayout'>
+            {paginatedProjects.map((project) => (
               <motion.a
                 href={project.demoUrl}
                 target="_blank"
@@ -253,6 +326,37 @@ const Projects: React.FC = () => {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {totalPages > 1 && (
+          <div className="pagination">
+            <button 
+              className="page-btn page-btn-icon" 
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+              &larr;
+            </button>
+            {Array.from({ length: totalPages }).map((_, idx) => {
+              const pageNo = idx + 1;
+              return (
+                <button
+                  key={pageNo}
+                  className={`page-btn ${currentPage === pageNo ? 'active' : ''}`}
+                  onClick={() => handlePageChange(pageNo)}
+                >
+                  {pageNo}
+                </button>
+              );
+            })}
+            <button 
+              className="page-btn page-btn-icon" 
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              &rarr;
+            </button>
+          </div>
+        )}
         
         <div className="projects-footer">
           <a href="https://github.com/julianlechuga" target="_blank" rel="noopener noreferrer" className="btn btn-secondary glass">
