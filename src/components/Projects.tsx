@@ -138,7 +138,7 @@ const projectsData: Project[] = [
     title: 'Tattoo Shop Demo',
     category: 'Lifestyle',
     description: 'A dark, artistic portfolio site for a tattoo studio featuring responsive galleries and artist profiles.',
-    image: 'https://images.unsplash.com/photo-1590246814883-578332cb1601?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'TSX', 'CSS Modules'],
     demoUrl: 'https://julianlechuga.github.io/TatooShop-demo/',
     repoUrl: 'https://github.com/JulianLechuga/TatooShop-demo'
@@ -168,7 +168,7 @@ const projectsData: Project[] = [
     title: 'Flower Shop Demo',
     category: 'Lifestyle',
     description: 'A vibrant, botanical ecommerce showcase for a local florist with product galleries and contact details.',
-    image: 'https://images.unsplash.com/photo-1563241527-2004ab3ba185?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'CSS', 'Responsive'],
     demoUrl: 'https://julianlechuga.github.io/FlowerShop-demo/',
     repoUrl: 'https://github.com/JulianLechuga/FlowerShop-demo'
@@ -178,7 +178,7 @@ const projectsData: Project[] = [
     title: 'Nail Salon Demo',
     category: 'Beauty',
     description: 'A highly visual, trendy portfolio for a nail salon focusing on high-quality artwork displays.',
-    image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=600&q=80',
     tech: ['React', 'TSX', 'Framer Motion'],
     demoUrl: 'https://julianlechuga.github.io/NailSaloon-demo/',
     repoUrl: 'https://github.com/JulianLechuga/NailSaloon-demo'
