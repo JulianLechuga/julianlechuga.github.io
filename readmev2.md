@@ -5,9 +5,11 @@
     <h4>
       I'm a Full Stack Developer & Scrum Master from Argentina. <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">  <br> 
       With over 4 years of experience, I specialize in developing innovative, scalable, and responsive applications using TypeScript, React, Node.js, PostgreSQL, and AWS.
-      <hr/> <br/>
-      I consider myself an highly organized and efficient professional. I approach challenges methodically and always analyze the best possible ways to solve complex problems with clean code and modern web design principles.
     </h4>
+    <hr/> 
+    <p>
+      I consider myself an highly organized and efficient professional. I approach challenges methodically and always analyze the best possible ways to solve complex problems with clean code and modern web design principles.
+    </p>
     <h5> 📬 You can reach me out at: <a href="mailto:julianlechuga12@gmail.com"> julianlechuga12@gmail.com </a></h5>
     <h5> 💼 Or via LinkedIn here:</h5>
     <a href="https://www.linkedin.com/in/julian-lechuga" target="_blank">
@@ -20,42 +22,91 @@
 
 ---
 
-### 💻 About Me:
-
-```javascript
-const JulianLechuga = {
+<table align="center" width="100%">
+  <tr>
+    <td width="55%" valign="top">
+      <h3 align="center">💻 About Me</h3>
+      <pre><code>const JulianLechuga = {
   pronouns: ['He', 'Him'],
   code: {
-    languages:  ["TypeScript", "JavaScript", "HTML5", "CSS3", "YAML"],
+    languages:  ["TypeScript", "JavaScript", "HTML", "CSS"],
     database:   ["PostgreSQL", "MySQL"],
     backEnd:    ["Node.js", "Express", "Sequelize", "AWS"],
-    frontEnd:   ["React", "Redux", "Bootstrap", "TailwindCSS"],
-    inProgress: ["React Native", "Next.js"]
+    frontEnd:   ["React", "Redux", "TailwindCSS"],
   },
-  roles: ["Full Stack Developer", "Scrum Master", "Teaching Assistant"],
+  roles: ["Full Stack Developer", "Scrum Master"],
   contact: {
     email: "julianlechuga12@gmail.com",
     portfolio: "https://julianlechuga.github.io/"
   }
-};
-```
+};</code></pre>
+    </td>
+    <td width="45%" valign="top" style="padding-left: 15px;">
+      <h3 align="center">🎓 Educación e Idiomas</h3>
+      <ul align="left">
+        <li>🎓 <b>Full Stack Web Developer</b> <br/><i>Bootcamp Soy Henry (+800 horas) (2022).</i></li>
+        <li>🇬🇧 <b>Inglés: Nivel C2</b><br/><i>(Avanzado Proficiente - CAE Score 200). EF SET English Certificate 81/100.</i></li>
+        <li>🇦🇷 <b>Español:</b> <i>Nativo.</i></li>
+        <li>🤝 <b>Soft Skills:</b> <i>Liderazgo e Integración de Equipos, Comunicación, Resolución de Problemas, Resiliencia y Metodologías Ágiles.</i></li>
+      </ul>
+      <h3 align="center">📄 Curriculum Vitae</h3>
+      <p align="center">
+        <a href="https://drive.google.com/file/d/1XMr4p_4T8eRYv67JYSmOmUcm9yGmHEKh/view?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/CV-English-blue?style=for-the-badge&logo=google-drive" alt="CV English"/></a>
+        &nbsp;&nbsp;
+        <a href="https://drive.google.com/file/d/1LiHCsAz5fErWpz3cphuZhnt45pqsaMGv/view?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/CV-Español-blue?style=for-the-badge&logo=google-drive" alt="CV Spanish"/></a>
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 👨‍💻 Professional Experience & Milestones:
+### 👨‍💻 Experiencia Profesional
 
-- 🏦 **Banco Comafi (Nov 2022 - May 2024):** Worked as a *Full Stack Developer & Scrum Master*. Led the development of applications for internal operators and bank clients using TypeScript, YAML, and React. I also organized Scrum ceremonies, anticipated business requirements, and developed optimization strategies.
-- 🚀 **Currently Building:** I've recently developed an extensive **Premium Collection of independent Web Applications** directed to the service sector (Dental Clinics, Barbershops, Psychologist offices, Auto repair shops, etc.). These demos were built from scratch utilizing **React and TypeScript**, featuring modern animations, dynamic iteractivity, and local SEO best practices.
-- 🎵 **ReMusic App:** A groundbreaking social network app allowing users to review songs, share playlists, chat in real-time, and process payments. Developed using React, Redux, Node.js, and PostgreSQL.
-- 💪 **Methodology & Skills:** My experience has fostered a deep understanding of agile methodologies, a capacity for rapid learning, and strong collaborative skills essential for both independent and team-based development environments.
-- ⚡ **Fun Fact:** In my free time, I love playing videogames, reading, and researching interesting topics related to medicine and science.
+<details>
+  <summary>🏦 <b>Banco Comafi</b> | Desarrollador Full Stack & Scrum Master <i>(Nov 2022 - May 2024)</i></summary>
+  <br/>
+  <blockquote>
+    ✔️ Desarrollo de aplicaciones y portales para operadores y clientes mediante TypeScript, YAML y React.<br/>
+    ✔️ Liderazgo en revisiones de procesos de negocios, facilitando las ceremonias Scrum.<br/>
+    ✔️ Anticipación de requisitos y estrategias de optimización para aportar soluciones eficientes al banco.
+  </blockquote>
+</details>
+
+<details>
+  <summary>🚀 <b>Henry Bootcamp</b> | Full Stack Developer Teaching Assistant <i>(Jun 2022 - Ago 2022)</i></summary>
+  <br/>
+  <blockquote>
+    ✔️ Coordinación de grupos de estudiantes, asistiendo en la resolución de ejercicios técnicos mediante Pair Programming.<br/>
+    ✔️ Proposición de mejoras estructurales para los procesos del bootcamp.
+  </blockquote>
+</details>
+
+<details>
+  <summary>💻 <b>LiveData</b> | Desarrollador Full Stack <i>(Abr 2020 - Abr 2022)</i></summary>
+  <br/>
+  <blockquote>
+    ✔️ Mantenimiento y desarrollo de nuevos módulos funcionales y visuales en React, TypeScript y CSS.<br/>
+    ✔️ Detección y corrección de bugs para asegurar una experiencia de usuario estable.
+  </blockquote>
+</details>
+
+<details>
+  <summary>📱 <b>ProSoft</b> | Community Manager & Soporte IT <i>(Mar 2017 - Mar 2020)</i></summary>
+  <br/>
+  <blockquote>
+    ✔️ Manejo de redes, diseño de contenido y promoción estratégica para aumentar el engagement y visualizaciones en redes sociales.<br/>
+    ✔️ Soporte de usuarios de la compañía.
+  </blockquote>
+</details>
 
 ---
 
-### 📄 Curriculum Vitae : 
-
-- 🇬🇧 <a href="https://drive.google.com/file/d/1XMr4p_4T8eRYv67JYSmOmUcm9yGmHEKh/view?usp=sharing" target="_blank"> English Version </a>
-- 🇪🇸 <a href="https://drive.google.com/file/d/1LiHCsAz5fErWpz3cphuZhnt45pqsaMGv/view?usp=sharing" target="_blank"> Spanish Version </a>
+### 🔥 Proyectos Destacados (Demos Web Premium)
+He desarrollado recientemente una **colección de sitios web optimizados** e independientes para el sector de servicios. Creados desde cero usando **React y TypeScript**, estos proyectos presentan un diseño premium, interactividad dinámica y SEO best practices local:
+* 🩺 **Salud y Bienestar:** Clínica Dental, Psicología y Fisioterapia.
+* ✂️ **Belleza e Imagen:** Estética, Barbería, Peluquería, Salón de Uñas y Tattoo Shop.
+* 🏋️ **Otros Servicios Profesionales:** Gimnasio, Floristería, Taller Mecánico, Empresa de Reformas y Restaurante.
 
 ---
 
