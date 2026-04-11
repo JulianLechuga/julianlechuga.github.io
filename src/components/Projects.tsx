@@ -238,6 +238,45 @@ const projectsData: Project[] = [
     tech: ['React', 'TSX', 'Framer Motion'],
     demoUrl: 'https://julianlechuga.github.io/NailSaloon-demo/',
     repoUrl: 'https://github.com/JulianLechuga/NailSaloon-demo'
+  },
+  {
+    id: 18,
+    title: { en: 'Pro Code Editor', es: 'Editor de Código Pro' },
+    categoryId: 'utility',
+    description: { 
+      en: 'A powerful, browser-based code editor with a sleek UI, syntax highlighting, and folder structures.', 
+      es: 'Potente editor de código en el navegador con interfaz elegante, resaltado de sintaxis y estructura de archivos.' 
+    },
+    image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=600&q=80',
+    tech: ['React', 'TSX', 'CSS Modules'],
+    demoUrl: 'https://julianlechuga.github.io/pro-code-editor/',
+    repoUrl: 'https://github.com/JulianLechuga/pro-code-editor'
+  },
+  {
+    id: 19,
+    title: { en: 'Retro Fighter Game', es: 'Juego de Lucha Retro' },
+    categoryId: 'lifestyle',
+    description: { 
+      en: 'An immersive retro-style fighting and adventure game built directly onto the browser window.', 
+      es: 'Inmersivo juego de lucha y aventuras de estilo retro construido nativamente sobre la ventana del navegador.' 
+    },
+    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80',
+    tech: ['React', 'TSX', 'GameHooks'],
+    demoUrl: 'https://julianlechuga.github.io/retro-fighter/',
+    repoUrl: 'https://github.com/JulianLechuga/retro-fighter'
+  },
+  {
+    id: 20,
+    title: { en: 'Web Mockup Builder', es: 'Mockup Builder Web' },
+    categoryId: 'utility',
+    description: { 
+      en: 'A drag-and-drop structural design tool for crafting wireframes and UI mockups effortlessly.', 
+      es: 'Una herramienta drag-and-drop de diseño estructural para crear wireframes y mockups de UI sin esfuerzo.' 
+    },
+    image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80',
+    tech: ['React', 'TSX', 'Framer Motion'],
+    demoUrl: 'https://julianlechuga.github.io/web-mockup-builder/',
+    repoUrl: 'https://github.com/JulianLechuga/web-mockup-builder'
   }
 ];
 
