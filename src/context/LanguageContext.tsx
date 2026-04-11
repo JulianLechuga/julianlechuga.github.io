@@ -18,7 +18,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title1': 'Crafting Digital',
     'hero.title2': 'Experiences',
     'hero.title3': 'that Inspire',
-    'hero.subtitle': "Hi, I'm Julián Lechuga, a Full Stack Developer turning complex problems into elegant, beautiful, and intuitive interfaces. Specializing in modern React, sleek UI/UX, and performant web apps.",
+    'hero.subtitle': "Hi, I'm Julián Lechuga. Full Stack Software Engineer with 5+ years of experience building scalable web applications and improving development workflows through automation. Specialized in React, TypeScript, Node.js, and CI/CD.",
     'hero.viewWork': 'View Work',
     'hero.techStack': 'Tech Stack:',
     'projects.title1': 'My',
@@ -28,8 +28,8 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.viewMore': 'View more on GitHub',
     'about.title1': 'About',
     'about.title2': 'Me',
-    'about.p1': "I'm a Full Stack Developer and Web Designer based in Ciudad Jardín, Buenos Aires, Argentina. I consider myself an organized and efficient person when tackling tasks, approaching them methodically with creative thinking, teamwork, communication, and autonomy.",
-    'about.p2': 'My experience includes working with NodeJS, React, Redux, SQL among other technologies. I recently led the creation of a music social network, ReMusic App, allowing users to review songs/artists, with live chat and email notifications.',
+    'about.p1': "I'm a Full Stack Software Engineer based in Buenos Aires, Argentina & Oviedo, Spain. I specialize in building scalable web applications and improving development workflows through automation.",
+    'about.p2': "My portfolio features 20+ live applications demonstrating end-to-end development, perfect Lighthouse performance scores, and robust DevOps practices including CI/CD pipelines natively managed via GitHub Actions.",
     'about.skillsTitle': 'Core Skills',
     'about.experienceTitle': 'Experience',
     'about.educationTitle': 'Education',
@@ -47,21 +47,29 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.quickLinks': 'Quick Links',
     'footer.connect': 'Connect',
     'footer.rights': 'All rights reserved.',
-    'cv.exp1.title': 'Full Stack Developer - Scrum Master',
-    'cv.exp1.company': 'Banco Comafi',
-    'cv.exp1.date': 'Nov 2022 - May 2024',
-    'cv.exp2.title': 'Full Stack Developer TA',
-    'cv.exp2.company': 'Henry Bootcamp',
-    'cv.exp2.date': 'Jun 2022 - Aug 2022',
+    
+    'cv.exp1.title': 'Independent Full Stack Engineer',
+    'cv.exp1.company': 'Freelance',
+    'cv.exp1.date': 'May 2024 - Present',
+    'cv.exp1.desc': 'Designed and deployed 20+ applications, built CI/CD workflows, achieved 90+ Lighthouse scores.',
+    
+    'cv.exp2.title': 'Full Stack Developer & Scrum Master',
+    'cv.exp2.company': 'Banco Comafi',
+    'cv.exp2.date': 'Nov 2022 - May 2024',
+    'cv.exp2.desc': 'Developed fintech applications, acted as Scrum Master improving coordination, and introduced strong QA practices.',
+    
     'cv.exp3.title': 'Full Stack Developer',
     'cv.exp3.company': 'LiveData',
     'cv.exp3.date': 'Apr 2020 - Apr 2022',
-    'cv.edu1.title': 'Full Stack Web Developer',
-    'cv.edu1.company': 'Henry Bootcamp (+800 hrs)',
-    'cv.edu1.date': '2022',
-    'cv.edu2.title': 'English C2 Proficient (CAE)',
-    'cv.edu2.company': 'EF SET English Certificate 81/100',
-    'cv.edu2.date': '',
+    'cv.exp3.desc': 'Maintained enterprise applications, fixed bugs, and modernized UI components using React and Node.js.',
+    
+    'cv.edu1.title': 'B.S. Information Technology Engineering',
+    'cv.edu1.company': 'Escuela Politécnica de Ingeniería de Gijón',
+    'cv.edu1.date': 'Ongoing',
+    
+    'cv.edu2.title': 'Full Stack Web Developer',
+    'cv.edu2.company': 'Henry Bootcamp',
+    'cv.edu2.date': '2022',
   },
   es: {
     'nav.about': 'Sobre Mí',
@@ -72,7 +80,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title1': 'Creando Experiencias',
     'hero.title2': 'Digitales',
     'hero.title3': 'que Inspiran',
-    'hero.subtitle': "Hola, soy Julián Lechuga, Desarrollador Full Stack transformando problemas complejos en interfaces elegantes e intuitivas. Especializado en React moderno, UI/UX y aplicaciones de alto rendimiento.",
+    'hero.subtitle': "Hola, soy Julián Lechuga. Ingeniero de Software Full Stack con más de 5 años de experiencia construyendo aplicaciones escalables y automatizando flujos de despliegue con React, TypeScript y Node.js.",
     'hero.viewWork': 'Ver Proyectos',
     'hero.techStack': 'Tecnologías:',
     'projects.title1': 'Mis',
@@ -82,8 +90,8 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.viewMore': 'Ver más en GitHub',
     'about.title1': 'Sobre',
     'about.title2': 'Mí',
-    'about.p1': "Soy un Desarrollador Full Stack y Diseñador Web de Ciudad Jardín, Buenos Aires, Argentina. Me considero una persona organizada y eficiente, afrontando las tareas de forma metódica con pensamiento creativo, trabajo en equipo, comunicación y autonomía.",
-    'about.p2': "Tengo experiencia trabajando en NodeJS, React, Redux, SQL, entre otras. Lideré la creación de una red social musical, ReMusic App, permitiendo reseñas de canciones, chat en vivo y notificaciones por correo.",
+    'about.p1': "Soy un Ingeniero de Software Full Stack de Buenos Aires, Argentina y Oviedo, España. Me especializo en construir aplicaciones escalables y optimizar el desarrollo mediante automatización y CI/CD.",
+    'about.p2': "Mi portfolio cuenta con más de 20 aplicaciones activas que demuestran desarrollo de principio a fin, puntuaciones perfectas en Lighthouse y prácticas sólidas de DevOps mediante GitHub Actions.",
     'about.skillsTitle': 'Habilidades Principales',
     'about.experienceTitle': 'Experiencia Profesional',
     'about.educationTitle': 'Educación y Logros',
@@ -101,28 +109,36 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.quickLinks': 'Enlaces Rápidos',
     'footer.connect': 'Conecta',
     'footer.rights': 'Todos los derechos reservados.',
-    'cv.exp1.title': 'Desarrollador Full Stack - Scrum Master',
-    'cv.exp1.company': 'Banco Comafi',
-    'cv.exp1.date': 'Nov 2022 - May 2024',
-    'cv.exp2.title': 'Full Stack Developer TA',
-    'cv.exp2.company': 'Henry Bootcamp',
-    'cv.exp2.date': 'Jun 2022 - Ago 2022',
+    
+    'cv.exp1.title': 'Ingeniero Full Stack Independiente',
+    'cv.exp1.company': 'Freelance',
+    'cv.exp1.date': 'Mayo 2024 - Presente',
+    'cv.exp1.desc': 'Diseñé y desplegué más de 20 aplicaciones de producción, desarrollé pipelines CI/CD y logré optimizar el código obteniendo puntuaciones Lighthouse de 90+.',
+    
+    'cv.exp2.title': 'Desarrollador Full Stack & Scrum Master',
+    'cv.exp2.company': 'Banco Comafi',
+    'cv.exp2.date': 'Nov 2022 - Mayo 2024',
+    'cv.exp2.desc': 'Construí aplicaciones fintech con React, actué como Scrum Master facilitando coordinación e introduje fuertes prácticas de pruebas QA.',
+    
     'cv.exp3.title': 'Desarrollador Full Stack',
     'cv.exp3.company': 'LiveData',
     'cv.exp3.date': 'Abr 2020 - Abr 2022',
-    'cv.edu1.title': 'Full Stack Web Developer',
-    'cv.edu1.company': 'Henry Bootcamp (+800 hrs)',
-    'cv.edu1.date': '2022',
-    'cv.edu2.title': 'Inglés C2 Proficient (CAE)',
-    'cv.edu2.company': 'EF SET English Certificate 81/100',
-    'cv.edu2.date': '',
+    'cv.exp3.desc': 'Mantuve aplicaciones empresariales, solucioné defectos estructurales y estandaricé interfaces usando NodeJS y React.',
+    
+    'cv.edu1.title': 'Grado en Ingeniería Informática (Tecnologías de la Información)',
+    'cv.edu1.company': 'Escuela Politécnica de Ingeniería de Gijón',
+    'cv.edu1.date': 'En Curso',
+    
+    'cv.edu2.title': 'Full Stack Web Developer',
+    'cv.edu2.company': 'Henry Bootcamp',
+    'cv.edu2.date': '2022',
   }
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('es');
+  const [language, setLanguage] = useState<Language>('en');
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === 'en' ? 'es' : 'en'));

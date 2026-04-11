@@ -73,18 +73,21 @@ const About: React.FC = () => {
                   <div className="timeline-dot"></div>
                   <h4 className="timeline-role">{t('cv.exp1.title')}</h4>
                   <p className="timeline-company">{t('cv.exp1.company')} <span>| {t('cv.exp1.date')}</span></p>
+                  <p className="timeline-description text-sm mt-2 opacity-80">{t('cv.exp1.desc')}</p>
                 </div>
                 
                 <div className="timeline-item glass">
                   <div className="timeline-dot"></div>
                   <h4 className="timeline-role">{t('cv.exp2.title')}</h4>
                   <p className="timeline-company">{t('cv.exp2.company')} <span>| {t('cv.exp2.date')}</span></p>
+                  <p className="timeline-description text-sm mt-2 opacity-80">{t('cv.exp2.desc')}</p>
                 </div>
                 
                 <div className="timeline-item glass">
                   <div className="timeline-dot"></div>
                   <h4 className="timeline-role">{t('cv.exp3.title')}</h4>
                   <p className="timeline-company">{t('cv.exp3.company')} <span>| {t('cv.exp3.date')}</span></p>
+                  <p className="timeline-description text-sm mt-2 opacity-80">{t('cv.exp3.desc')}</p>
                 </div>
               </div>
             </div>
